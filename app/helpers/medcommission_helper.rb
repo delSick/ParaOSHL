@@ -1,0 +1,2 @@
+module MedcommissionHelper
+end

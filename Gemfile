@@ -30,12 +30,14 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-#Twitter Bootstrap
+#Twitter Bootstrap (Design)
 gem 'bootstrap-sass', '~> 3.3.6'
-
+#Devise (User Management)
 gem 'devise', '~> 4.2'
+#File Upload
+gem 'carrierwave'
 
-
+gem 'jquery-turbolinks'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

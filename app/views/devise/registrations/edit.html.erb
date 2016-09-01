@@ -54,8 +54,13 @@
 
 </div>
 <div class="panel-footer">
-<%= link_to "Back", :back %>
+<nav aria-label="...">
+  <ul class="pager">
+    <li><%= link_to " Back", :back, class:'previous', aria: {hidden: true} %></li>
 
+  <!--  <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li> -->
+  </ul>
+</nav>
 </div>
 </div>
 
