@@ -1,5 +1,4 @@
 /* Navbar manipulation */
-
 $navbar-height: 40px;
 $navbar-default-color: #44AB32;
 $navbar-default-bg: #44AB32;
@@ -8,8 +7,18 @@ $navbar-default-toggle-icon-bar-bg: #FFFFFF;
 $navbar-default-toggle-hover-bg: #ccc;
 $navbar-default-toggle-border-color: #transparent;
 
+/* Footer manipulation */
+$footer-body-height: 50px;
+$footer-header-height: 102px;
+
 /* Jumbotron manipulation */
 $jumbotron-padding: 10px;
+
+
+/* Tumbnail manipulation */
+$thumbnail-padding: 3px;
+
+
 
 @import "*";
 @import "bootstrap-sprockets";
@@ -17,4 +26,27 @@ $jumbotron-padding: 10px;
 
 .center {
 	text-align:center;
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.navbar-fixed-top .nav {
+    padding: 15px 0;
 }

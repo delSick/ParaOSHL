@@ -1,3 +1,40 @@
+<div class="bs-example" data-example-id="thumbnails-with-custom-content"> 
+<div class="row">
+
+  	<div class="col-sm-6 col-md-4">
+    	<div class="thumbnail">
+    		<%=link_to image_tag("index/intranet.jpg", width: "100%", height: "200px", alt: "Intranet_Legacy"), "https://www.paracelsus-kliniken.de/" %>
+	    	<div class="caption">
+        		<h3>Klassisches Intranet</h3>
+        		<p>Wechseln Sie ins klassische Intranet, in dem können Sie wie gewohnt IT Support, Speisepläne, Betriebsratinformationen und ähnliches finden.</p>
+        	</div>
+        </div>
+    </div>
+  	<div class="col-sm-6 col-md-4">
+    	<div class="thumbnail">
+    		<%=link_to image_tag("index/calendar.jpg", width: "100%", height: "200px", alt: "commisson"), medcommission_med_commission_path %> 
+	    	<div class="caption">
+        		<h3>Hausdienst Pläne einsehen</h3>
+        		<p>Sie erhalten einen Überblick über die Verfügbaren Rufbereitschaften der jeweiligen Abteilung.</p>
+        	</div>
+        </div>
+	</div>
+	<% if user_signed_in? %>
+	<div class="col-sm-6 col-md-4">
+    	<div class="thumbnail">
+    		<%=link_to image_tag("index/calendar_edit.png", width: "100%", height: "200px", alt: "commisson_edit"), medcommission_med_commission_upload_path %> 
+	    	<div class="caption">
+        		<h3>Hausdienst Pläne bearbeiten</h3>
+        		<p>Sie können die Pläne über die Sie verfügen bearbeiten</p>
+        	</div>
+        </div>
+	</div>
+	<% end %>  
+
+</div>
+</div>
+
+<!--
 <div class="jumbotron center">
 	<h1>Welcome to my Hausdienst App</h1>
 	
@@ -13,3 +50,8 @@
     <% end %>
 
 </div>
+
+        Website in Tab öffnen:
+        :target => "_blank"
+
+-->

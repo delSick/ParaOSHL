@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <nav class="navbar navbar-default">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -8,12 +9,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <!--<%=image_tag("PK_Stab_xs.png")%> -->
+      <!-- <%=image_tag("PK_Logo_xs.png")%> -->
+
+      <%=link_to image_tag("PK_Logo_xs.png"), root_path %>      
       <ul class="nav navbar-nav">
-      <%=link_to image_tag("PK_Stab_xs.png", class: 'navbar-brand'), root_path, class:'navbar-header' %> 
-      <%=link_to 'Paracelsus Kliniken', root_path, class:'navbar-brand' %>    
+      <a class='navbar-brand'>
+        
+      </a>
       </ul>
-       <!-- <img alt="Brand" src="../images/PK_Stab_xs.png"> -->
+       <!-- <img alt="Brand" src="../images/PK_Stab_xs.png"> 
+<span><%=link_to image_tag("PK_Stab_xs.png", class:'navbar-brand'), root_path %> </span>
+        <%=link_to 'Paracelsus Kliniken', root_path, class:'navbar-brand' %>    
+       -->
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -22,8 +29,9 @@
       
       <ul class="nav navbar-nav navbar-right">
           <li><%= link_to 'Intranet', root_path %></li>
-          <li><%= link_to 'Hausdienst', medcommission_med_commission_path %></li>
+          <!-- <li><%= link_to 'Hausdienst', medcommission_med_commission_path %></li>
           <li><%= link_to 'Information', home_about_path %></li>
+           <li><%= link_to 'Testpage', secret_path %></li> -->
           <% if user_signed_in? %>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Konto<span class="caret"></span></a>
