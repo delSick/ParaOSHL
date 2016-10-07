@@ -13,6 +13,6 @@ The application is developet on this software:
 - Rails 	5.0.0.1
 - mySQL	14.14
 - Dependencies
--- Bootstraps
--- Devices
+	- Bootstraps
+	- Devices
 
